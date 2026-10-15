@@ -55,10 +55,10 @@ Completa la tabla con la salida real de cinco repeticiones:
 
 | Variante | Cinco tiempos (s) | Mediana (s) |
 |---|---|---|
-| Secuencial | 0.000080900, 0.000058200, 0.000032800, 0.000061200, 0.000038200 | 0.000058200 |
-| Procesos | 0.285547700, 0.264678900, 0.257426500, 0.248961500, 0.252557500 | 0.257426500 |
+| Secuencial | 0.000042000, 0.000063700, 0.000029900, 0.000038900, 0.000028900 | 0.000038900 |
+| Procesos | 0.331346100, 0.301007900, 0.286056100, 0.286661000, 0.287964800 | 0.287964800 |
 
-Razón de aceleración observada: 0.000226. Los procesos tardaron más, algo esperable para una operación tan pequeña por el coste de
+Razón de aceleración observada: 0.000135. Los procesos tardaron más, algo esperable para una operación tan pequeña por el coste de
 crear y coordinar procesos. Un experimento futuro podría aumentar el rango de
 datos o hacer que cada dato implicara un cálculo útil más costoso. No se debe
 presentar una salida esperada como medición real.

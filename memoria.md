@@ -22,9 +22,9 @@ El contexto `spawn` inicia procesos limpios e importa el módulo trabajador. La 
 
 | Variante | Muestras (s) | Mediana (s) |
 |---|---|---|
-| Secuencial | 0.000080900; 0.000058200; 0.000032800; 0.000061200; 0.000038200 | 0.000058200 |
-| Procesos | 0.285547700; 0.264678900; 0.257426500; 0.248961500; 0.252557500 | 0.257426500 |
+| Secuencial | 0.000042000; 0.000063700; 0.000029900; 0.000038900; 0.000028900 | 0.000038900 |
+| Procesos | 0.331346100; 0.301007900; 0.286056100; 0.286661000; 0.287964800 | 0.287964800 |
 
-Aceleración (mediana secuencial / mediana procesos): **0.000226**. La variante con procesos tardó más porque crear, coordinar y cerrar el pool cuesta mucho más que elevar 50 enteros al cuadrado. Añadir trabajadores no garantiza reducir el tiempo: incrementa el coste de arranque y coordinación, y esta carga no permite amortizarlo. Merecería estudiar un rango de datos mucho mayor o más trabajo útil por dato.
+Aceleración (mediana secuencial / mediana procesos): **0.000135**. La variante con procesos tardó más porque crear, coordinar y cerrar el pool cuesta mucho más que elevar 50 enteros al cuadrado. Añadir trabajadores no garantiza reducir el tiempo: incrementa el coste de arranque y coordinación, y esta carga no permite amortizarlo. Merecería estudiar un rango de datos mucho mayor o más trabajo útil por dato.
 
 Las pruebas obligatorias ejecutadas terminaron correctamente con el Python disponible. Para esta implementación se utilizó asistencia de IA como apoyo para elaborar el código y revisar el contrato; el enunciado permite ese uso. No se consultaron fuentes externas.
